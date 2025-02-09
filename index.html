@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica Plus Salud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Clinica Plus Salud</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#agendar-cita">Agenda tu Cita</a></li>
+                <li><a href="#horario">Horario de Atención</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+                <li><a href="#equipo">Equipo Médico</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>Bienvenido a Clinica Plus Salud</h2>
+        <p>Tu salud es nuestra prioridad. Ofrecemos servicios médicos de alta calidad con un equipo de profesionales altamente capacitados.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Medicina Interna</li>
+            <li>Nutrición</li>
+            <li>Odontología</li>
+            <li>Ortopedia</li>
+            <li>Medicamentos</li>
+            <li>Psicología</li>
+        </ul>
+    </section>
+
+    <section id="agendar-cita">
+        <h2>Agenda tu Cita</h2>
+        <form id="citaForm">
+            <label for="tipoServicio">Tipo de Servicio:</label>
+            <select id="tipoServicio" name="tipoServicio">
+                <option value="medicina_interna">Medicina Interna</option>
+                <option value="nutricion">Nutrición</option>
+                <option value="odontologia">Odontología</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="psicologia">Psicología</option>
+            </select>
+
+            <label for="calendario">Calendario:</label>
+            <input type="date" id="calendario" name="calendario">
+
+            <label for="hora">Hora de la Cita:</label>
+            <div id="horas">
+                <button type="button" class="hora-btn" data-hora="08:00">8:00 AM</button>
+                <button type="button" class="hora-btn" data-hora="08:20">8:20 AM</button>
+                <button type="button" class="hora-btn" data-hora="08:40">8:40 AM</button>
+                <button type="button" class="hora-btn" data-hora="09:00">9:00 AM</button>
+                <!-- Agrega más horas según sea necesario -->
+            </div>
+
+            <button type="submit">Enviar Cita</button>
+        </form>
+    </section>
+
+    <section id="horario">
+        <h2>Horario de Atención</h2>
+        <p>Lunes a Viernes: 6:30 AM - 4:00 PM</p>
+        <p>Sábados y Domingos: 7:00 AM - 12:00 PM</p>
+    </section>
+
+    <section id="ubicacion">
+        <h2>Ubicación</h2>
+        <p>Col. Las Minitas, Avenida Juan Lindo, Edificio Millenium II Health Center, Piso No. 3, Clinica No. 318</p>
+    </section>
+
+    <section id="equipo">
+        <h2>Equipo Médico</h2>
+        <div class="equipo-container">
+            <div class="medico">
+                <img src="Image1.jpg" alt="Dra. Rosa Sierra">
+                <p>Dra. Rosa Sierra</p>
+            </div>
+            <div class="medico">
+                <img src="Image2.jpg" alt="Dr. Kevin Molina">
+                <p>Dr. Kevin Molina</p>
+            </div>
+            <div class="medico">
+                <img src="Image3.jpg" alt="Dra. Alejandra Flores">
+                <p>Dra. Alejandra Flores</p>
+            </div>
+            <div class="medico">
+                <img src="Image4.jpg" alt="Genesis Duron">
+                <p>Genesis Duron</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <button onclick="window.open('https://wa.me/50487655578', '_blank')">WhatsApp</button>
+        <button onclick="window.open('https://facebook.com/plussaludhn', '_blank')">Facebook</button>
+        <button onclick="window.open('https://instagram.com/plussaludhn', '_blank')">Instagram</button>
+        <button onclick="window.location.href='mailto:plusalud.info@gmail.com'">Email</button>
+    </footer>
+
+    <div id="chatbot">
+        <button id="chatbot-btn">Abrir Chat</button>
+        <div id="chatbot-window">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="celular" placeholder="Celular">
+            <input type="email" id="correo" placeholder="Correo">
+            <button id="enviar-chat">Enviar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
